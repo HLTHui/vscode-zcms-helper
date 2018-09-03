@@ -1,65 +1,26 @@
-# vscode-zcms-helper README
+# vscode-zcms-helper
 
-This is the README for your extension "vscode-zcms-helper". After writing up a brief description, we recommend including the following sections.
+> A vscode extension for write ZCMS template  
+为ZCMS模板编写提供标签提示的VSCode插件。  
 
-## Features
+## 特性
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+标签与标签属性的提示  
 
-For example if there is an image subfolder under your extension project workspace:
+* 每个标签与属性的提示  
 
-\!\[feature X\]\(images/feature-x.png\)
+* 部分属性会提示值，例如 Boolean 类型的属性  
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+### 引号与缩进配置
 
-## Requirements
+1 - 进入 `文件` -> `首选项` -> `配置` 或按快捷键 `Ctrl` + `,`  
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+2 - 引号与缩进配置  
+```javascript
+  "vscode-zcms-helper.indent-size": 2,
+  "vscode-zcms-helper.quotes": "double"    // double 或 single
+```
 
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+## Issues
+您的反馈让我们将 vscode-zcms-helper 改进的更好，提交 Issues 网址，  
+https://github.com/abeet/vscode-zcms-helper/issues

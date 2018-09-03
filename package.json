@@ -1,36 +1,65 @@
 {
-    "name": "vscode-zcms-helper",
-    "displayName": "vscode-zcms-helper",
-    "description": "A vscode extension for write ZCMS template",
-    "version": "0.0.1",
-    "publisher": "zving",
-    "engines": {
-        "vscode": "^1.26.0"
-    },
-    "categories": [
-        "Other"
+  "name": "vscode-zcms-helper",
+  "displayName": "vscode-zcms-helper",
+  "description": "A vscode extension for write ZCMS template",
+  "version": "0.0.1",
+  "publisher": "zving",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/abeet/vscode-zcms-helper"
+	},
+  "engines": {
+    "vscode": "^1.26.0"
+  },
+  "categories": [
+    "Snippets",
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:html",
+    "onLanguage:vue",
+    "onCommand:extension.showAbout"
+  ],
+  "main": "./extension",
+  "contributes": {
+    "commands": [{
+        "command": "extension.showAbout",
+        "title": "about ZCMS Helper"
+      }
     ],
-    "activationEvents": [
-        "onCommand:extension.sayHello"
-    ],
-    "main": "./extension",
-    "contributes": {
-        "commands": [
-            {
-                "command": "extension.sayHello",
-                "title": "Hello World"
-            }
-        ]
-    },
-    "scripts": {
-        "postinstall": "node ./node_modules/vscode/bin/install",
-        "test": "node ./node_modules/vscode/bin/test"
-    },
-    "devDependencies": {
-        "typescript": "^2.6.1",
-        "vscode": "^1.1.21",
-        "eslint": "^4.11.0",
-        "@types/node": "^8.10.25",
-        "@types/mocha": "^2.2.42"
+    "configuration": {
+      "type": "object",
+      "title": "ZCMS Helper Configuration",
+      "properties": {
+        "zcms-helper.indent-size": {
+          "type": "number",
+          "default": 2,
+          "description": "Indentation size of snippets"
+        },
+        "zcms-helper.quotes": {
+          "type": "string",
+          "default": "double",
+          "description": "Normal quotes of autocomplete",
+          "enum": [
+            "single",
+            "double"
+          ]
+        }
+      }
     }
+  },
+  "scripts": {
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "typescript": "^2.6.1",
+    "vscode": "^1.1.21",
+    "eslint": "^4.11.0",
+    "@types/node": "^8.10.25",
+    "@types/mocha": "^2.2.42"
+  },
+  "dependencies": {
+    "pretty": "^2.0.0"
+  }
 }

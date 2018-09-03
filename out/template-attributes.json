@@ -1,0 +1,10 @@
+{
+  "page": {
+    "type": "boolean",
+    "description": "ZCMS 模板标签属性 page"
+  },
+  "level": {
+    "options": ["Child", "Root", "Current", "CurrentAndChild"],
+    "description": "ZCMS 模板标签属性 level"
+  }
+}

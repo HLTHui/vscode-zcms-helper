@@ -1,0 +1,293 @@
+{
+  "cms:adv": {
+    "attributes": ["code"],
+    "defaults": ["code"],
+    "description": "ZCMS 模板标签 cms:adv"
+  },
+  "cms:article": {
+    "attributes": ["begin", "pagesize", "count", "page", "type", "catalog", "catalogid", "catalogalias", "hasattribute", "condition", "level"],
+    "defaults": ["catalogalias"],
+    "description": "ZCMS 模板标签 cms:article"
+  },
+  "cms:audio": {
+    "attributes": ["begin", "pagesize", "count", "page", "type", "catalog", "catalogid", "catalogalias", "hasattribute", "condition", "level"],
+    "defaults": ["catalogalias"],
+    "description": "ZCMS 模板标签 cms:audio"
+  },
+  "cms:block": {
+    "attributes": ["code"],
+    "defaults": ["code"],
+    "description": "ZCMS 模板标签 cms:block"
+  },
+  "cms:blockitem": {
+    "attributes": ["begin", "pagesize", "count", "page", "condition"],
+    "description": "ZCMS 模板标签 cms:blockitem"
+  },
+  "cms:blockrow": {
+    "attributes": ["begin", "pagesize", "count", "page", "condition", "id"],
+    "description": "ZCMS 模板标签 cms:blockrow"
+  },
+  "cms:catalog": {
+    "attributes": ["begin", "pagesize", "count", "page", "type", "name", "id", "alias", "condition", "level"],
+    "defaults": ["alias"],
+    "description": "ZCMS 模板标签 cms:catalog"
+  },
+  "cms:comment": {
+    "attributes": ["contenttype", "contentid"],
+    "description": "ZCMS 模板标签 cms:comment"
+  },
+  "cms:customcontent": {
+    "attributes": ["begin", "pagesize", "count", "page", "type", "name", "catalog", "catalogid", "catalogalias", "hasattribute", "condition", "level"],
+    "defaults": ["catalogalias"],
+    "description": "ZCMS 模板标签 cms:customcontent"
+  },
+  "cms:customform": {
+    "attributes": ["model", "template", "id", "method", "action"],
+    "description": "ZCMS 模板标签 cms:customform"
+  },
+  "data:list": {
+    "attributes": ["begin", "pagesize", "count", "page", "condition", "method"],
+    "description": "ZCMS 模板标签 data:list"
+  },
+  "z:else": {
+    "attributes": [],
+    "description": "ZCMS 模板标签 z:else"
+  },
+  "z:eval": {
+    "attributes": ["expression"],
+    "defaults": ["expression"],
+    "description": "ZCMS 模板标签 z:eval"
+  },
+  "cms:file": {
+    "attributes": ["begin", "pagesize", "count", "page", "type", "catalog", "catalogid", "catalogalias", "condition", "level"],
+    "defaults": ["catalogalias"],
+    "description": "ZCMS 模板标签 cms:file"
+  },
+  "z:for": {
+    "attributes": ["from", "to", "step"],
+    "description": "ZCMS 模板标签 z:for"
+  },
+  "gov:article": {
+    "attributes": ["begin", "pagesize", "count", "page", "type", "catalogid", "catalog", "catalogalias", "condition", "hasattribute", "level"],
+    "defaults": ["catalogalias"],
+    "description": "ZCMS 模板标签 gov:article"
+  },
+  "gov:list": {
+    "attributes": ["begin", "pagesize", "count", "page", "key", "value", "modecode", "condition", "cascade"],
+    "description": "ZCMS 模板标签 gov:list"
+  },
+  "cms:hotcontent": {
+    "attributes": ["begin", "pagesize", "count", "page", "listtype", "contenttype", "condition", "titlesize"],
+    "description": "ZCMS 模板标签 cms:hotcontent"
+  },
+  "cms:hotmessage": {
+    "attributes": ["begin", "pagesize", "count", "page", "condition", "code"],
+    "description": "ZCMS 模板标签 cms:hotmessage"
+  },
+  "cms:html": {
+    "attributes": [],
+    "description": "ZCMS 模板标签 cms:html"
+  },
+  "z:if": {
+    "attributes": ["condition", "output", "out"],
+    "description": "ZCMS 模板标签 z:if"
+  },
+  "cms:image": {
+    "attributes": ["begin", "pagesize", "count", "page", "condition", "imageid"],
+    "description": "ZCMS 模板标签 cms:image"
+  },
+  "cms:imagegroup": {
+    "attributes": ["begin", "pagesize", "count", "page", "type", "catalog", "catalogid", "catalogalias", "condition", "hasattribute", "level"],
+    "defaults": ["catalogalias"],
+    "description": "ZCMS 模板标签 cms:imagegroup"
+  },
+  "cms:imageplayer": {
+    "attributes": ["code"],
+    "defaults": ["code"],
+    "description": "ZCMS 模板标签 cms:imageplayer"
+  },
+  "cms:include": {
+    "attributes": ["file"],
+    "defaults": ["file"],
+    "description": "ZCMS 模板标签 cms:include"
+  },
+  "z:lang": {
+    "attributes": ["id", "language", "default"],
+    "description": "ZCMS 模板标签 z:lang"
+  },
+  "cms:link": {
+    "attributes": ["code"],
+    "defaults": ["code"],
+    "description": "ZCMS 模板标签 cms:link"
+  },
+  "z:list": {
+    "attributes": ["id", "method", "size", "page"],
+    "description": "ZCMS 模板标签 z:list"
+  },
+  "member:menu": {
+    "attributes": ["begin", "pagesize", "count", "page", "condition"],
+    "description": "ZCMS 模板标签 member:menu"
+  },
+  "member:menugroup": {
+    "attributes": ["begin", "pagesize", "count", "page", "condition"],
+    "description": "ZCMS 模板标签 member:menugroup"
+  },
+  "cms:message": {
+    "attributes": ["code", "name"],
+    "description": "ZCMS 模板标签 cms:message"
+  },
+  "meta:field": {
+    "attributes": ["begin", "pagesize", "count", "page", "condition", "code"],
+    "description": "ZCMS 模板标签 meta:field"
+  },
+  "meta:fieldgroup": {
+    "attributes": ["begin", "pagesize", "count", "page", "condition", "model", "code"],
+    "description": "ZCMS 模板标签 meta:fieldgroup"
+  },
+  "cms:pagebar": {
+    "attributes": [],
+    "description": "ZCMS 模板标签 cms:pagebar"
+  },
+  "cms:position": {
+    "attributes": ["catalog", "spliter", "home", "homename"],
+    "description": "ZCMS 模板标签 cms:position"
+  },
+  "cms:sql": {
+    "attributes": ["sql", "item"],
+    "description": "ZCMS 模板标签 cms:sql"
+  },
+  "cms:tagword": {
+    "attributes": [],
+    "description": "ZCMS 模板标签 cms:tagword"
+  },
+  "cms:tagwordcontentlist": {
+    "attributes": ["begin", "pagesize", "count", "page", "condition", "contenttype"],
+    "description": "ZCMS 模板标签 cms:tagwordcontentlist"
+  },
+  "cms:tagwordlist": {
+    "attributes": ["begin", "pagesize", "count", "page", "condition", "contenttype", "minweight", "maxweight", "level"],
+    "description": "ZCMS 模板标签 cms:tagwordlist"
+  },
+  "cms:text": {
+    "attributes": [],
+    "description": "ZCMS 模板标签 cms:text"
+  },
+  "z:var": {
+    "attributes": ["name", "value"],
+    "description": "ZCMS 模板标签 z:var"
+  },
+  "cms:video": {
+    "attributes": ["begin", "pagesize", "count", "page", "type", "catalog", "catalogid", "catalogalias", "condition", "level"],
+    "defaults": ["catalogalias"],
+    "description": "ZCMS 模板标签 cms:video"
+  },
+  "cms:vote": {
+    "attributes": ["code"],
+    "defaults": ["code"],
+    "description": "ZCMS 模板标签 cms:vote"
+  },
+  "cms:votedetail": {
+    "attributes": ["begin", "pagesize", "count", "page", "condition"],
+    "description": "ZCMS 模板标签 cms:votedetail"
+  },
+  "cms:votesubject": {
+    "attributes": ["begin", "pagesize", "count", "page", "votecode", "condition"],
+    "description": "ZCMS 模板标签 cms:votesubject"
+  },
+  "cms:votesubjectitem": {
+    "attributes": ["begin", "pagesize", "count", "page", "voteid", "votesubjectid", "condition"],
+    "description": "ZCMS 模板标签 cms:votesubjectitem"
+  },
+  "z:button": {
+    "attributes": ["id", "name", "onclick", "href", "target", "type", "theme", "menu", "checked", "disabled"],
+    "description": "ZCMS 模板标签 z:button"
+  },
+  "z:checkbox": {
+    "attributes": ["id", "name", "onchange", "onchange", "onclick", "onclick", "value", "tablelayout", "tablewidth", "code", "method", "defaultcheck", "disabled", "column", "options", "theme"],
+    "description": "ZCMS 模板标签 z:checkbox"
+  },
+  "z:childtab": {
+    "attributes": ["id", "src", "onclick", "afterclick", "selected", "disabled", "visible", "lazy"],
+    "description": "ZCMS 模板标签 z:childtab"
+  },
+  "z:choose": {
+    "attributes": ["variable"],
+    "defaults": ["variable"],
+    "description": "ZCMS 模板标签 z:choose"
+  },
+  "z:datagrid": {
+    "attributes": ["id", "method", "sql", "page", "size", "multiselect", "autofill", "autopagesize", "scroll", "lazy", "cachesize"],
+    "description": "ZCMS 模板标签 z:datagrid"
+  },
+  "z:datalist": {
+    "attributes": ["id", "method", "page", "size", "autofill", "autopagesize"],
+    "description": "ZCMS 模板标签 z:datalist"
+  },
+  "z:extend": {
+    "attributes": ["id"],
+    "defaults": ["id"],
+    "description": "ZCMS 模板标签 z:extend"
+  },
+  "z:init": {
+    "attributes": ["method"],
+    "defaults": ["method"],
+    "description": "ZCMS 模板标签 z:init"
+  },
+  "z:langbutton": {
+    "attributes": ["target", "value"],
+    "description": "ZCMS 模板标签 z:langbutton"
+  },
+  "z:menu": {
+    "attributes": ["type", "theme", "onitemclick", "minwidth", "maxheight", "listurl", "classname", "disabled", "items"],
+    "description": "ZCMS 模板标签 z:menu"
+  },
+  "z:pagebar": {
+    "attributes": ["target", "type", "afloat", "autohide"],
+    "description": "ZCMS 模板标签 z:pagebar"
+  },
+  "z:panelheader": {
+    "attributes": ["id", "collapsible", "onclick"],
+    "description": "ZCMS 模板标签 z:panelheader"
+  },
+  "z:param": {
+    "attributes": ["var", "default"],
+    "description": "ZCMS 模板标签 z:param"
+  },
+  "z:priv": {
+    "attributes": ["login", "usertype", "priv"],
+    "description": "ZCMS 模板标签 z:priv"
+  },
+  "z:radio": {
+    "attributes": ["id", "name", "onchange", "onchange", "onclick", "onclick", "value", "tablelayout", "tablewidth", "code", "method", "defaultcheck", "disabled", "column", "options", "theme"],
+    "description": "ZCMS 模板标签 z:radio"
+  },
+  "z:scrollpanel": {
+    "attributes": ["theme", "overflow", "adaptive"],
+    "description": "ZCMS 模板标签 z:scrollpanel"
+  },
+  "z:select": {
+    "attributes": ["id", "name", "style", "onchange", "onchange", "listwidth", "listwidth", "listheight", "listheight", "listurl", "listurl", "verify", "condition", "autowidth", "value", "valuetext", "classname", "disabled", "input", "showvalue", "conditionfield", "conditionvalue", "lazy", "code", "method", "defaultblank", "defaultblank", "options"],
+    "description": "ZCMS 模板标签 z:select"
+  },
+  "z:tab": {
+    "attributes": ["lazy"],
+    "defaults": ["lazy"],
+    "description": "ZCMS 模板标签 z:tab"
+  },
+  "z:toolbar": {
+    "attributes": ["theme", "id"],
+    "description": "ZCMS 模板标签 z:toolbar"
+  },
+  "z:tree": {
+    "attributes": ["id", "method", "style", "level", "lazy", "customscrollbar", "expand"],
+    "description": "ZCMS 模板标签 z:tree"
+  },
+  "z:uploader": {
+    "attributes": ["id", "name", "barcolor", "uploadtype", "allowtype", "filecount", "filemaxsize", "filename", "width", "height"],
+    "description": "ZCMS 模板标签 z:uploader"
+  },
+  "z:when": {
+    "attributes": ["value", "other", "out"],
+    "description": "ZCMS 模板标签 z:when"
+  }
+}
