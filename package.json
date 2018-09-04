@@ -1,8 +1,11 @@
 {
   "name": "vscode-zcms-helper",
   "displayName": "vscode-zcms-helper",
+  "version": "0.0.2",
   "description": "A vscode extension for write ZCMS template",
-  "version": "0.0.1",
+  "keywords": [
+    "zcms"
+  ],
   "publisher": "zving",
 	"repository": {
 		"type": "git",
@@ -21,6 +24,7 @@
     "onCommand:extension.showAbout"
   ],
   "main": "./extension",
+	"icon": "zcms-helper.png",
   "contributes": {
     "commands": [{
         "command": "extension.showAbout",
