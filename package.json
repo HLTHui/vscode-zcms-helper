@@ -1,7 +1,7 @@
 {
   "name": "vscode-zcms-helper",
   "displayName": "vscode-zcms-helper",
-  "version": "0.0.2",
+  "version": "0.0.10",
   "description": "A vscode extension for write ZCMS template",
   "keywords": [
     "zcms"
