@@ -1,62 +1,228 @@
 {
   "icons": [],
-  "code": {},
-  "begin": {},
-  "pagesize": {},
-  "count": {},
+  "code": {
+    "description": "别名"
+  },
+  "begin": {
+    "description": "从第几行起获取数据"
+  },
+  "pagesize": {
+    "description": "分页大小"
+  },
+  "count": {
+    "description": "一共取几条数据"
+  },
   "page": {
     "type": "boolean",
-    "description": "ZCMS 模板标签属性 page"
+    "description": "是否支持分页 true:支持分页 false:不支持（默认值）"
+  },
+  "modelCode": {
+    "type": "boolean",
+    "description": "模型编码"
+  },
+  "valuePrefix": {
+    "type": "boolean",
+    "description": "字段Code"
+  },
+  "preview": {
+    "type": "boolean",
+    "description": "是否预览"
+  },
+  "innercode": {
+    "description": "栏目内部编码"
+  },
+  "dimensionID": {
+    "description": "維度ID,level=Root时有效"
+  },
+  "loadExtend": {
+    "type": "boolean",
+    "description": "是否加载扩展模型数据 false:不允许加载（默认值）"
+  },
+  "loadContent": {
+    "type": "boolean",
+    "description": "是否加载文章/扩展内容 false:不允许加载（默认值）"
+  },
+  "loadProps": {
+    "type": "boolean",
+    "description": "是否加载配置属性 false:不允许加载（默认值）"
+  },
+  "platformAttribute": {
+    "description": "发布平台，默认pc"
+  },
+  "hasLogo": {
+    "type": "boolean",
+    "description": "是否只显示有Logo的内容"
+  },
+  "alt": {
+    "description": "模板内置数据ID"
+  },
+  "templateTypeID": {
+    "description": "区块模版类型ID，默认为 Block"
+  },
+  "siteID": {
+    "description": "站点ID，支持根据站点ID跨站点取数据"
   },
   "type": {},
-  "catalog": {},
-  "catalogid": {},
-  "catalogalias": {},
-  "hasattribute": {},
-  "condition": {},
+  "catalog": {
+    "description": "栏目名称"
+  },
+  "catalogid": {
+    "description": "栏目ID"
+  },
+  "catalogalias": {
+    "description": "栏目别名"
+  },
+  "hasattribute": {
+    "options": ["Image", "Video", "Attach", "Hot", "Recommend"],
+    "description": "内容包含属性（多个逗号隔开）根据代码项ContentAttribute取值"
+  },
+  "condition": {
+    "description": "数据条件，支持SQL"
+  },
   "level": {
     "options": ["Child", "Root", "Current", "CurrentAndChild"],
-    "description": "ZCMS 模板标签属性 level"
+    "description": "所属栏目层级"
   },
-  "id": {},
-  "name": {},
-  "alias": {},
-  "contenttype": {},
-  "contentid": {},
-  "model": {},
-  "template": {},
-  "method": {},
-  "action": {},
-  "expression": {},
-  "from": {},
-  "to": {},
-  "step": {},
+  "noAttribute": {
+    "options": ["Image", "Video", "Attach", "Hot", "Recommend"],
+    "description": "文章不包含属性"
+  },
+  "publishtime": {
+    "description": "输出特定时间内发布的内容，一共4种后缀，d表示天，h表示小时，m表示月，y表示年，前面加数字表示数量，例如12d表示12天，输出12天前的内容。也可以写成时间段:yyyy-MM-dd,yyyy-MM-dd，表示输出时间段内发布的内容，中间用逗号隔开。"
+  },
+  "flags": {
+    "description": "标记特殊类型，由每个注册的控制器自己解析"
+  },
+  "orderby": {
+    "description": "用于添加排序标识，加上此参数将取消其他参数的排序属性"
+  },
+  "id": {
+    "description": "ID"
+  },
+  "keyword": {
+    "description": "关键词"
+  },
+  "name": {
+    "description": "标题"
+  },
+  "alias": {
+    "description": "栏目别名"
+  },
+  "contenttype": {
+    "description": "内容类型"
+  },
+  "templateid": {
+    "description": "模板类型ID，默认是CommentTemplate"
+  },
+  "contentid": {
+    "description": "内容ID"
+  },
+  "mode": {
+    "description": "分页条模式，值为空则为默认样式，值为classical则为旧版样式"
+   },
+  "model": {
+   "description": "模型"
+  },
+  "template": {
+    "description": "模板类型"
+  },
+  "ui": {
+    "description": "包含UI目录下的文件时本属性必须设为true且file属性必须使用相对于UI根目录的路径"
+  },
+  "method": {
+    "description": "提交方式"
+  },
+  "action": {
+    "description": "自定义表单Action"
+  },
+  "ssi": {
+    "type": "boolean",
+    "description": "是否生成SSI指令 true:开启（默认值）"
+  },
+  "authCode": {
+    "description": "是否需要校验码"
+  },
+  "expression": {
+    "description": "求值表达式，可以使用${}占位符"
+  },
+  "from": {
+    "description": "从第几个起开始循环"
+  },
+  "to": {
+    "description": "循环到第几个结束"
+  },
+  "step": {
+    "description": "循环变量步长,默认为1"
+  },
   "key": {},
   "value": {},
   "modecode": {},
   "cascade": {},
-  "listtype": {},
-  "titlesize": {},
+  "listtype": {
+    "description": "热点内容抓取范围,允许填写的值为CodeType=CommentSupportType"
+  },
+  "titlesize": {
+    "description": "标题显示的字数"
+  },
   "output": {},
-  "out": {},
+  "out": {
+    "description": "条件成立时输出的值"
+  },
   "imageid": {},
-  "file": {},
-  "language": {},
-  "default": {},
+  "file": {
+    "description": "被包含的文件的路径（相对于本模板的路径）"
+  },
+  "language": {
+    "description": "语言"
+  },
+  "default": {
+    "description": "默认值，当国际化字符串未找到时输出此值"
+  },
+  "arg0": {
+    "description": "参数值，当国际化字符串中有占位符时可以使用此值"
+  },
+  "arg1": {
+    "description": "参数值，当国际化字符串中有占位符时可以使用此值"
+  },
+  "arg2": {
+    "description": "参数值，当国际化字符串中有占位符时可以使用此值"
+  },
+  "arg3": {
+    "description": "参数值，当国际化字符串中有占位符时可以使用此值"
+  },
+  "arg4": {
+    "description": "参数值，当国际化字符串中有占位符时可以使用此值"
+  },
   "data": {},
-  "item": {},
-  "spliter": {},
-  "home": {},
-  "homename": {},
-  "sql": {},
-  "minweight": {},
-  "maxweight": {},
+  "item": {
+    "description": "占位符前缀，迭代时使用此前缀引用数据"
+  },
+  "spliter": {
+    "description": "链接分隔符，默认为 “/” "
+  },
+  "home": {
+    "description": "是否添加首页链接"
+  },
+  "homename": {
+    "description": "首页链接名称，默认名称“首页”"
+  },
+  "sql": {
+    "description": "sql查询语句"
+  },
+  "minweight": {
+    "description": "最小权重"
+  },
+  "maxweight": {
+    "description": "最大权重"
+  },
   "votecode": {},
   "voteid": {},
   "votesubjectid": {},
   "onclick": {},
   "href": {},
-  "target": {},
+  "target": {
+    "description": "链接的target属性"
+  },
   "theme": {},
   "menu": {},
   "checked": {},
@@ -73,7 +239,9 @@
   "visible": {},
   "lazy": {},
   "variable": {},
-  "size": {},
+  "size": {
+    "description": "是否分页"
+  },
   "multiselect": {},
   "autofill": {},
   "autopagesize": {},
@@ -83,12 +251,18 @@
   "minwidth": {},
   "maxheight": {},
   "listurl": {},
-  "classname": {},
+  "classname": {
+    "description": "二维码容器样式选择器"
+  },
   "items": {},
   "afloat": {},
-  "autohide": {},
+  "autohide": {
+    "description": "true,false"
+  },
   "collapsible": {},
-  "var": {},
+  "var": {
+    "description": "参数名称"
+  },
   "login": {},
   "usertype": {},
   "priv": {},
@@ -107,13 +281,19 @@
   "defaultblank": {},
   "customscrollbar": {},
   "expand": {},
-  "barcolor": {},
+  "barcolor": {}, 
   "uploadtype": {},
   "allowtype": {},
   "filecount": {},
   "filemaxsize": {},
   "filename": {},
-  "width": {},
-  "height": {},
-  "other": {}
+  "width": {
+    "description": "宽度"
+  },
+  "height": {
+    "description": "高度"
+  },
+  "other": {
+    "description": "true,false"
+  }
 }
